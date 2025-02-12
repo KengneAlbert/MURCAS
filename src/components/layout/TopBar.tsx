@@ -7,13 +7,13 @@ export function TopBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-10">
           <div className="flex items-center space-x-6">
-            <a href="mailto:contact@murcas-fasas.cm" className="flex items-center space-x-2 text-sm hover:text-white/80 transition-colors">
+            <a href="mailto:mutuelle.agents@eneo.cm" className="flex items-center space-x-2 text-sm hover:text-white/80 transition-colors">
               <Mail className="h-4 w-4" />
-              <span className="hidden sm:inline">contact@murcas-fasas.cm</span>
+              <span className="hidden sm:inline">mutuelle.agents@eneo.cm</span>
             </a>
             <a href="tel:+237233429800" className="flex items-center space-x-2 text-sm hover:text-white/80 transition-colors">
               <Phone className="h-4 w-4" />
-              <span className="hidden sm:inline">(+237) 233 42 98 00</span>
+              <span className="hidden sm:inline">(+237) 694 592 119 / 693 171 253</span>
             </a>
           </div>
           

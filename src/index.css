@@ -95,3 +95,32 @@ html {
 * {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Styles personnalisés pour le contenu de l'article */
+.article-content h1 {
+  @apply text-3xl font-bold text-gray-900 mb-6;
+}
+
+.article-content h2 {
+  @apply text-2xl font-bold text-gray-800 mt-12 mb-4;
+}
+
+.article-content h3 {
+  @apply text-xl font-semibold text-gray-800 mt-8 mb-4;
+}
+
+.article-content p {
+  @apply text-gray-600 leading-relaxed mb-6;
+}
+
+.article-content ul {
+  @apply space-y-2 my-6 list-disc list-inside;
+}
+
+.article-content li {
+  @apply text-gray-600;
+}
+
+.article-content a {
+  @apply text-[#003DA5] hover:text-[#002D7A] underline;
+}

@@ -1,30 +1,35 @@
 import React from 'react';
 import { Calendar, ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import agee from '../assets/images/agee.jpg';
+import eneo from '../assets/images/eneo.jpg';
+import jeune from '../assets/images/jeune.jpg';
+import retraite from '../assets/images/retraite.jpg';
 
 const ALL_NEWS = [
   {
-    id: "assemblee-generale-2024",
+    id: "mutuelle-aux-mutualistes",
     images: [
-      "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      agee,
+      eneo,
+      jeune,
+      retraite
     ],
     category: "Événement",
-    date: "15 Mars 2024",
-    title: "Assemblée Générale Annuelle",
-    description: "Participez à notre assemblée générale annuelle pour découvrir les résultats et les perspectives de votre mutuelle.",
+    date: "30 août 2024",
+    title: "LA MUTUELLE S'ADRESSE à SES MUTUALISTES",
+    description: "Par la voir de son président, le vendredi 30 août 2024 via un interview réalisé sur WhatsApp, la mutuelle a partagé à ses mutualistes la vision, les missions et les[...]",
   },
   {
-    id: "nouveau-service-digital",
+    id: "parole-aux-actes",
     images: [
-      "https://images.unsplash.com/photo-1579389083395-4507e98b5b67?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      jeune,
+      retraite
     ],
     category: "Nouveauté",
     date: "10 Mars 2024",
-    title: "Lancement du Nouveau Service Digital",
-    description: "Découvrez notre nouvelle plateforme en ligne pour gérer vos prestations et suivre vos demandes en temps réel.",
+    title: "DE LA PAROLE AUX ACTES, LA MURCAS TIENT SES PROMESSES.",
+    description: "La mutuelle grâce au partenariat établi avec l'entreprise SKY MOTORS, fait une exposition pour le CAR PLAN promis aux mutualiste",
   }
 ];
 

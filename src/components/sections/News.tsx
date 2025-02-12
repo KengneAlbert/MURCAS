@@ -1,31 +1,32 @@
 import React from 'react';
 import { Calendar, ArrowRight, Users, Building } from 'lucide-react';
+import actu from '../../assets/images/actu.jpg';
 
 const NEWS_ITEMS = [
   {
-    image: "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: actu,
     category: "Événement",
-    date: "15 Mars 2024",
-    title: "Assemblée Générale Annuelle",
-    description: "Participez à notre assemblée générale annuelle pour découvrir les résultats et les perspectives de votre mutuelle.",
+    date: "30 août 2024",
+    title: "LA MUTUELLE S'ADRESSE à SES MUTUALISTES",
+    description: "Par la voir de son président, le vendredi 30 août 2024 via un interview réalisé sur WhatsApp, la mutuelle a partagé à ses mutualistes la vision, les missions et les[...]",
     icon: Users
   },
   {
-    image: "https://images.unsplash.com/photo-1579389083395-4507e98b5b67?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    image: actu,
     category: "Nouveauté",
     date: "10 Mars 2024",
-    title: "Lancement du Nouveau Service Digital",
-    description: "Découvrez notre nouvelle plateforme en ligne pour gérer vos prestations et suivre vos demandes en temps réel.",
+    title: "DE LA PAROLE AUX ACTES, LA MURCAS TIENT SES PROMESSES.",
+    description: "La mutuelle grâce au partenariat établi avec l'entreprise SKY MOTORS, fait une exposition pour le CAR PLAN promis aux mutualiste",
     icon: Building
   },
-  {
-    image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    category: "Information",
-    date: "5 Mars 2024",
-    title: "Nouveaux Avantages pour les Membres",
-    description: "De nouvelles prestations sont désormais disponibles pour tous les membres de la mutuelle.",
-    icon: Users
-  }
+  // {
+  //   image: actu,
+  //   category: "Information",
+  //   date: "5 Mars 2024",
+  //   title: "Nouveaux Avantages pour les Membres",
+  //   description: "De nouvelles prestations sont désormais disponibles pour tous les membres de la mutuelle.",
+  //   icon: Users
+  // }
 ];
 
 export function News() {

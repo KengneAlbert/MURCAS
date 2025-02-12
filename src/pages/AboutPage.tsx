@@ -27,42 +27,44 @@ export function AboutPage() {
   const tabContent = {
     vision: {
       title: "Notre Vision",
-      description: "Devenir la référence en matière de protection sociale dans le secteur de l'énergie au Cameroun.",
+      description: "Nous avons l'ambition de rendre la MUTUELLE plus attractive et efficace tout en veillant sur sa pérennité.",
       points: [
-        "Leadership dans la protection sociale",
-        "Innovation continue des services",
-        "Excellence opérationnelle",
-        "Développement durable"
+        "Être la référence en matière de protection sociale dans le secteur de l'énergie",
+        "Moderniser continuellement nos services pour répondre aux besoins évolutifs",
+        "Maintenir les plus hauts standards de qualité dans nos opérations",
+        "Assurer une croissance responsable et pérenne de la mutuelle"
       ]
     },
     objectif: {
       title: "Notre Objectif",
-      description: "Rendre la mutuelle plus attractive et efficace tout en veillant sur sa pérennité.",
+      description: "Fournir un cadre en vue d’offrir à ses membres les moyens de :",
       points: [
-        "Optimisation des prestations",
-        "Gestion financière rigoureuse",
-        "Satisfaction des membres",
-        "Croissance durable"
+        "Se constituer une retraite complémentaire",
+        "Maintenir une gestion transparente et efficace des ressources",
+        "Exercer, à titre accessoire toute activité ayant pour objet l’amélioration des conditions de vie et l’épanouissement sociale de ses membres",
+        "Mettre en place une solidarité agissante à travers le Fasas"
       ]
     },
     mission: {
       title: "Notre Mission",
-      description: "Assurer la protection sociale et financière de nos membres et de leurs familles.",
+      description: "Collecter mensuellement les cotisations au travers des retenues sur salaires des agents mutualistes ainsi que les contributions patronales afin de constituer une épargne individuelle.",
       points: [
-        "Protection sociale complète",
-        "Accompagnement personnalisé",
-        "Solutions financières adaptées",
-        "Support aux familles"
+        "Collecter mensuellement par retenues sur salaire un montant défini, afin de constituer un fonds d’aide et de solidarité",
+        "Payer mensuellement les rentes aux retraités",
+        "L’amélioration des conditions de vie et l’épanouissement social de ses membres",
+        "Assurer la pérennité de la mutuelle"
       ]
     },
     valeurs: {
       title: "Nos Valeurs",
       description: "Des principes forts qui guident nos actions au quotidien.",
       points: [
-        "Solidarité et entraide",
-        "Transparence et intégrité",
-        "Professionnalisme",
-        "Innovation"
+        "Avoir une attitude intègre",
+        "Respecter la Mutuelle, ses collaborateurs et son environnement",
+        "Servir au mieux et avec abnégation l’intérêt des mutualistes",
+        "Veiller à la confidentialité des informations",
+        "Se conformer aux Statuts, au Règlement Intérieur et la charte interne",
+        "Avoir une relation saine éthique avec les partenaires"
       ]
     }
   };
@@ -85,29 +87,6 @@ export function AboutPage() {
       number: "4",
       label: "Entreprises",
       description: "Partenaires de confiance"
-    }
-  ];
-
-  const timeline = [
-    {
-      year: "1998",
-      title: "Création de MURCAS FASAS",
-      description: "Fondation de la mutuelle par les travailleurs d'ENEO."
-    },
-    {
-      year: "2005",
-      title: "Extension des Services",
-      description: "Lancement des premiers crédits sociaux et du fonds de solidarité."
-    },
-    {
-      year: "2015",
-      title: "Digitalisation",
-      description: "Mise en place de la première plateforme numérique."
-    },
-    {
-      year: "2023",
-      title: "Innovation Continue",
-      description: "Lancement de nouveaux services et modernisation des outils."
     }
   ];
 
@@ -238,46 +217,15 @@ export function AboutPage() {
         </div>
       </div>
 
-      {/* Timeline avec animation au scroll */}
-      {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20">
-        <h3 className="text-4xl font-bold text-center mb-16">Notre Histoire</h3>
-        <div className="relative">
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#8FC03C] to-[#003DA5]"></div>
-          <div className="space-y-20">
-            {timeline.map((item, index) => (
-              <div 
-                key={index} 
-                className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} animate-fade-in-side`}
-                style={{ animationDelay: `${index * 300}ms` }}
-              >
-                <div className="w-1/2 pr-8">
-                  <div className={`${index % 2 === 0 ? 'text-right' : 'text-left'} transform hover:scale-105 transition-all duration-500`}>
-                    <span className="text-4xl font-bold text-[#8FC03C] inline-block hover:rotate-3 transition-transform duration-300">
-                      {item.year}
-                    </span>
-                    <h4 className="text-xl font-bold text-gray-900 mt-2">{item.title}</h4>
-                    <p className="text-gray-600 mt-2">{item.description}</p>
-                  </div>
-                </div>
-                <div className="relative flex items-center justify-center w-8">
-                  <div className="w-8 h-8 bg-[#8FC03C] rounded-full z-10 animate-pulse"></div>
-                </div>
-                <div className="w-1/2 pl-8"></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div> */}
-
       {/* Team Section avec hover effects améliorés */}
       <div className="bg-gray-50 py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20 animate-fade-in">
             <div className="inline-flex items-center px-4 py-2 bg-[#FF6B00]/10 rounded-full mb-6 hover:bg-[#FF6B00]/20 transition-colors duration-300">
-              <span className="text-[#FF6B00] text-sm font-semibold">NOTRE ÉQUIPE</span>
+              <span className="text-[#8FC03C] text-sm font-semibold">NOTRE ÉQUIPE</span>
             </div>
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
-              Notre <span className="text-[#FF6B00]">STAFF</span>
+              Notre <span className="text-[#8FC03C]">STAFF</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Une équipe dévouée et expérimentée au service de nos membres
@@ -307,7 +255,7 @@ export function AboutPage() {
                             <a 
                               key={i}
                               href="#" 
-                              className="p-2 bg-white/20 rounded-full hover:bg-[#FF6B00] transition-all duration-300 transform hover:scale-110"
+                              className="p-2 bg-white/20 rounded-full hover:bg-[#8FC03C] transition-all duration-300 transform hover:scale-110"
                               style={{ transitionDelay: `${i * 100}ms` }}
                             >
                               <Icon className="w-5 h-5" />
