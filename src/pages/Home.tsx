@@ -2,8 +2,9 @@ import React from 'react';
 import { Hero } from '../components/sections/Hero';
 import { About } from '../components/sections/About';
 import { Features } from '../components/sections/Features';
-import { FAQ } from '../components/sections/FAQ';
+import { Subsidiaries } from '../components/sections/Subsidiaries';
 import { News } from '../components/sections/News';
+import { FAQ } from '../components/sections/FAQ';
 import { Contact } from '../components/sections/Contact';
 
 export function Home() {
@@ -12,8 +13,9 @@ export function Home() {
       <Hero />
       <About />
       <Features />
-      <FAQ />
+      <Subsidiaries />
       <News />
+      <FAQ />   
       <Contact />
     </>
   );

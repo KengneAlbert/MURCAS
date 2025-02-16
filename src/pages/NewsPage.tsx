@@ -1,36 +1,30 @@
-import React from 'react';
-import { Calendar, ArrowRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
-import agee from '../assets/images/agee.jpg';
-import eneo from '../assets/images/eneo.jpg';
-import jeune from '../assets/images/jeune.jpg';
-import retraite from '../assets/images/retraite.jpg';
+import React from "react";
+import { Calendar, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import agee from "../assets/images/agee.jpg";
+import eneo from "../assets/images/eneo.jpg";
+import jeune from "../assets/images/jeune.jpg";
+import retraite from "../assets/images/retraite.jpg";
 
 const ALL_NEWS = [
   {
     id: "mutuelle-aux-mutualistes",
-    images: [
-      agee,
-      eneo,
-      jeune,
-      retraite
-    ],
+    images: [agee, eneo, jeune, retraite],
     category: "Événement",
     date: "30 août 2024",
     title: "LA MUTUELLE S'ADRESSE à SES MUTUALISTES",
-    description: "Par la voir de son président, le vendredi 30 août 2024 via un interview réalisé sur WhatsApp, la mutuelle a partagé à ses mutualistes la vision, les missions et les[...]",
+    description:
+      "Par la voir de son président, le vendredi 30 août 2024 via un interview réalisé sur WhatsApp, la mutuelle a partagé à ses mutualistes la vision, les missions et les[...]",
   },
   {
     id: "parole-aux-actes",
-    images: [
-      jeune,
-      retraite
-    ],
+    images: [jeune, retraite],
     category: "Nouveauté",
     date: "10 Mars 2024",
     title: "DE LA PAROLE AUX ACTES, LA MURCAS TIENT SES PROMESSES.",
-    description: "La mutuelle grâce au partenariat établi avec l'entreprise SKY MOTORS, fait une exposition pour le CAR PLAN promis aux mutualiste",
-  }
+    description:
+      "La mutuelle grâce au partenariat établi avec l'entreprise SKY MOTORS, fait une exposition pour le CAR PLAN promis aux mutualiste",
+  },
 ];
 
 export function NewsPage() {
@@ -38,12 +32,18 @@ export function NewsPage() {
 
   return (
     <div className="py-20">
-      {/* En-tête */}
-      <div className="bg-gradient-to-r from-[#003DA5] to-[#002D7A] py-20 mb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      {/* En-tête avec dégradé amélioré */}
+      <div className="relative bg-gradient-to-br from-[#003DA5]/95 via-[#002D7A]/90 to-[#001F52]/85 py-32 mb-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
+          <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-[#8FC03C]/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#003DA5]/20 rounded-full blur-3xl" />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center text-white">
           <h1 className="text-5xl font-bold mb-6">Actualités</h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-            Restez informé des dernières nouvelles et événements de votre mutuelle
+            Restez informé des dernières nouvelles et événements de votre
+            mutuelle
           </p>
         </div>
       </div>
@@ -51,13 +51,13 @@ export function NewsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {ALL_NEWS.map((article, index) => (
-            <div 
+            <div
               key={index}
               className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-500 cursor-pointer"
               onClick={() => navigate(`/news/${article.id}`)}
             >
               <div className="relative h-48 overflow-hidden">
-                <img 
+                <img
                   src={article.images[0]}
                   alt={article.title}
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
@@ -84,9 +84,7 @@ export function NewsPage() {
                   {article.title}
                 </h3>
 
-                <p className="text-gray-600 mb-6">
-                  {article.description}
-                </p>
+                <p className="text-gray-600 mb-6">{article.description}</p>
 
                 <div className="inline-flex items-center text-[#8FC03C] font-medium group-hover:text-[#7AA832] transition-colors">
                   Lire la suite
